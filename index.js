@@ -4,8 +4,13 @@ const port = process.env.PORT || 3000;
 const { cafeDrinks } = require('./data.js');
 
 
-app.get('/', (req, res) => {
+app.get('/cafedrinks', (req, res) => {
     res.json ({cafeDrinks})
+})
+
+app.get('/cafedrinks/:name', (req, res) => {
+    const matchingDrinks = cafeDrinks.find(drink => drink.name === req.params.name);
+    res.json ({matchingDrinks})
 })
 
 app.listen(port, () => {
