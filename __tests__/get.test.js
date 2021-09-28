@@ -2,7 +2,7 @@ const { app } = require('../server.js');
 const supertest = require('supertest');
 const request = supertest(app);
 
-describe('app routes', () => {
+describe('get routes', () => {
     it('cafedrinks endpoint returns all cafedrinks', async() => {
         const myData = [
             {

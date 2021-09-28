@@ -1,5 +1,5 @@
 
-cafeDrinks = [
+const cafeDrinks = [
     {
         name: 'Caffe_Latte',
         price: 3.35,
