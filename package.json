@@ -1,0 +1,26 @@
+{
+  "name": "lab06-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmitSheth9/lab06-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmitSheth9/lab06-backend/issues"
+  },
+  "homepage": "https://github.com/AmitSheth9/lab06-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^27.2.3",
+    "supertest": "^6.1.6"
+  }
+}
