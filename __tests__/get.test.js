@@ -3,7 +3,7 @@ const supertest = require('supertest');
 const request = supertest(app);
 
 describe('get routes', () => {
-    it('cafedrinks endpoint returns all cafedrinks', async() => {
+    test('cafedrinks endpoint returns all cafedrinks', async() => {
         const myData = [
             {
                 name: 'Caffe_Latte',
@@ -40,4 +40,17 @@ describe('get routes', () => {
         const response = await request.get('/cafedrinks');
         expect(response.body).toEqual(myData);
     });
+
+    test('cafedrinks endpoint returns with name', async() => {
+        const myData = {
+            name: 'Cappucino',
+            price: 3.35,
+            calories: 70,
+            hotcold: false
+        };
+        const response = await request.get('/cafedrinks/Cappucino');
+        expect(response.body).toEqual(myData);
+    });
+
+
 });
